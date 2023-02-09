@@ -3,11 +3,11 @@ name: rafela
 on: 
   workflow_dispatch:
     inputs:
-      authcode:
-        description: 'masukin CRD codenya'
+      authcode:& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AWtgzh6d7f_95nNi_h5-xvAaRTsswgKYZNCElt4f7ncDq0SC2ilUGJQD0gkqA4Udx3Unag" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME
+        
         required: true
       pincode:
-        description: 'Buat pin 6 digit'
+        123456
         required: true
  
 jobs:
